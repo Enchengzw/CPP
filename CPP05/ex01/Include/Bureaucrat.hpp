@@ -6,7 +6,7 @@
 /*   By: ezhou <ezhou@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/02 11:12:04 by ezhou             #+#    #+#             */
-/*   Updated: 2024/08/30 16:50:03 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/08/30 19:28:04 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <string>
 # include <iostream>
+
+class Form;
 
 class Bureaucrat
 {
@@ -33,6 +35,8 @@ class Bureaucrat
 
 		static int const	highestGrade = 1;
 		static int const	lowestGrade = 150;
+
+		void	signForm(Form & form) const;
 
 		class GradeTooHighException : public std::exception {
 			public:

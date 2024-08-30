@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "./Include/Bureaucrat.hpp"
+#include "./Include/AForm.hpp"
 
 Bureaucrat::Bureaucrat(void) : _name("John Doe"), _grade(Bureaucrat::lowestGrade)
 {
@@ -99,4 +100,18 @@ std::ostream &	operator<<(std::ostream & os, Bureaucrat const & obj)
 {
 	os <<  obj.getName() << ", bureaucrat grade: " << obj.getGrade() << " ";
 	return (os);
+}
+
+
+void	Bureaucrat::signForm(AForm & form) const
+{
+	try
+	{
+		form.BeSigned(*this);
+		std::cout << *this << " signed " << form.getName() << std::endl;
+	}
+	catch (std::exception const & e)
+	{
+		std::cout << *this << " couldn't sign " << form.getName() << " because: " << e.what() << std::endl;
+	}
 }

@@ -6,12 +6,12 @@
 #    By: ezhou <ezhou@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/22 16:38:50 by ezhou             #+#    #+#              #
-#    Updated: 2024/08/30 16:45:54 by ezhou            ###   ########.fr        #
+#    Updated: 2024/08/30 17:30:53 by ezhou            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 COLOUR_GREEN=\033[0;32m
-COLOUR_=\033[0;31m
+COLOUR_RED=\033[0;31m
 COLOUR_BLUE=\033[0;34m
 COLOUR_END=\033[0m
 
@@ -21,7 +21,7 @@ CC = clang++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC	= Main.cpp Bureaucrat.cpp
+SRC	= Main.cpp Bureaucrat.cpp Form.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
