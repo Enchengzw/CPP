@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ezhou <ezhou@student.42.fr>                +#+  +:+       +#+         #
+#    By: encheng <encheng@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/22 16:38:50 by ezhou             #+#    #+#              #
-#    Updated: 2024/09/10 12:08:13 by ezhou            ###   ########.fr        #
+#    Updated: 2024/09/10 18:11:10 by encheng          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ COLOUR_END=\033[0m
 
 NAME = btc
 
-CC = clang++
+CC = g++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
